@@ -57,13 +57,13 @@ body {
 /* ----------------------------------------------
    Container
 ---------------------------------------------- */
-.container {
+/* .container {
   max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 /* ----------------------------------------------
    Header Styles
@@ -575,7 +575,7 @@ body {
 }
 
 .mailing-list {
-  margin-left: 100px;
+  margin-left: auto;
 }
 
 .mailing-list-text {
@@ -876,6 +876,18 @@ body {
 .review-form-submit-btn:hover,
 .review-form-submit-btn:focus {
   background-color: #404bbf;
+}
+
+.container {
+  max-width: 318px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features-item:not(last-child) {
+  margin-bottom: 72px;
 }
 
 
