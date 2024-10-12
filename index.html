@@ -35,9 +35,9 @@
                     <li><a class="contact-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
-            <button type="button" class="menu-buttom">
+            <button type="button" class="menu-button">
                 <svg class="menu-icon-button" width="24" height="24">
-                    <use href="../images/icons.svg#icon-Group"></use>
+                    <use href="./images/icons.svg#icon-Group"></use>
                 </svg>
             </button>
         </div>
@@ -121,7 +121,7 @@
                              src="./images/mark_guerrero.jpg"
                              width="264" 
                              alt="Photo of Mark Guerrero"
-                             srcset="./images/mark_guerrero.jpg, ./images/mark_guerrero2x.jpg"
+                             srcset="./images/mark_guerrero.jpg 1x, ./images/mark_guerrero2x.jpg 2x"
                          />
                         <div class="for-members">
                             <h3 class="team-member-name">Mark Guerrero</h3>
@@ -164,7 +164,7 @@
                              src="./images/tom_ford.jpg" 
                              width="264" 
                              alt="Photo of Tom Ford" 
-                             srcset="./images/tom_ford.jpg, ./images/tom_ford2x.jpg"
+                             srcset="./images/tom_ford.jpg 1x, ./images/tom_ford2x.jpg 2x"
                         />
                         <div class="for-members">
                             <h3 class="team-member-name">Tom Ford</h3>
@@ -207,7 +207,7 @@
                              src="./images/camila_garcia.jpg" 
                              width="264" 
                              alt="Photo of Camila Garcia"
-                             srcset="./images/camila_garcia.jpg, ./images/camila_garcia2x.jpg"
+                             srcset="./images/camila_garcia.jpg 1x, ./images/camila_garcia2x.jpg 2x"
                          />
                         <div class="for-members">
                             <h3 class="team-member-name">Camila Garcia</h3>
@@ -250,7 +250,7 @@
                              src="./images/daniel_wilson.jpg" 
                              width="264" 
                              alt="Photo of Daniel Wilson"
-                             srcset="./images/daniel_wilson.jpg, ./images/daniel_wilson2x.jpg"
+                             srcset="./images/daniel_wilson.jpg 1x, ./images/daniel_wilson2x.jpg 2x"
                         />
                         <div class="for-members">
                             <h3 class="team-member-name">Daniel Wilson</h3>
@@ -299,15 +299,18 @@
                 <ul class="portfolio-list">
                     <li class="portfolio-item">
                         <div class="portfolio-overlay">
-                          <picture>
-                            <source srcset="./images/banking_app_pc2x.jpg" media="(min-width: 1158px) and (min-resolution: 192dpi)">
-                            <source srcset="./images/banking_app_pc.jpg" media="(min-width: 1158px)">
-                            <source srcset="./images/banking_app_tablet2x.jpg" media="(min-width: 768px) and (max-width: 1157px) and (min-resolution: 192dpi)">
-                            <source srcset="./images/banking_app_tablet.jpg" media="(min-width: 768px) and (max-width: 1157px)">
-                            <source srcset="./images/banking_app_mobile2x.jpg" media="(max-width: 767px) and (min-resolution: 192dpi)">
-                            <source srcset="./images/banking_app_mobile.jpg" media="(max-width: 767px)">              
-                            <img class="portfolio-image" src="./images/banking_app_pc.jpg" width="360" alt="photo of banking app">
-                          </picture>
+                        <picture>
+                            <!-- Desktop screen -->
+                            <source media='(min-width: 1158px)'
+                                srcset='./images/banking_app_pc.jpg 1x, ./images/banking_app_pc2x.jpg 2x' />
+                            <!-- Tablet screen -->
+                            <source media='(min-width: 768px)'
+                                srcset='./images/banking_app_tablet.jpg 1x, ./images/banking_app_tablet2x.jpg 2x' />
+                            <!-- Mobile screen -->
+                            <source media='(max-width: 767px)'
+                                srcset='./images/banking_app_mobile.jpg 1x, ./images/banking_app_mobile2x.jpg 2x' />
+                            <img src='./images/banking_app_pc.jpg' alt='cashless payment' />
+                        </picture>
                           <p class="portfolio-p">
                             14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                             Cloud Storage App
@@ -320,15 +323,18 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-overlay">
-                         <picture>
-                            <source srcset="./images/cashless_payment_pc2x.jpg" media="(min-width: 1158px) and (min-resolution: 192dpi)">
-                            <source srcset="./images/cashless_payment_pc.jpg" media="(min-width: 1158px)">
-                            <source srcset="./images/cashless_payment_tablet2x.jpg" media="(min-width: 768px) and (max-width: 1157px) and (min-resolution: 192dpi)">
-                            <source srcset="./images/cashless_payment_tablet.jpg" media="(min-width: 768px) and (max-width: 1157px)">
-                            <source srcset="./images/cashless_payment_mobile2x.jpg" media="(max-width: 767px) and (min-resolution: 192dpi)">
-                            <source srcset="./images/cashless_payment_mobile.jpg" media="(max-width: 767px)">
-                            <img src="./images/cashless_payment_pc.jpg" width="360" alt="photo of cashless payment">
-                         </picture>
+                        <picture>
+                            <!-- Desktop screen -->
+                            <source media='(min-width: 1158px)'
+                                srcset='./images/cashless_payment_pc.jpg 1x, ./images/cashless_payment_pc2x.jpg 2x' />
+                            <!-- Tablet screen -->
+                            <source media='(min-width: 768px)'
+                                srcset='./images/cashless_payment_tablet.jpg 1x, ./images/cashless_payment_tablet2x.jpg 2x' />
+                            <!-- Mobile screen -->
+                            <source media='(max-width: 767px)'
+                                srcset='./images/cashless_payment_mobile.jpg, ./images/cashless_payment_mobile2x.jpg 2x' />
+                            <img src='./images/cashless_payment_pc.jpg' alt='cashless payment' />
+                        </picture>
                             <p class="portfolio-p">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
                                 Ecommerce App ·
@@ -342,15 +348,18 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-overlay">
-                         <picture>
-                            <source srcset="./images/meditation_app_pc2x.jpg" media="(min-width: 1158px) and (min-resolution: 192dpi)">
-                            <source srcset="./images/meditation_app_pc.jpg" media="(min-width: 1158px)">
-                            <source srcset="./images/meditation_app_tablet2x.jpg"media="(min-width: 768px) and (max-width: 1157px) and (min-resolution: 192dpi)">
-                            <source srcset="./images/meditation_app_tablet.jpg" media="(min-width: 768px) and (max-width: 1157px)">
-                            <source srcset="./images/meditation_app_mobile2x.jpg" media="(max-width: 767px) and (min-resolution: 192dpi)">
-                            <source srcset="./images/meditation_app_mobile.jpg" media="(max-width: 767px)">
-                            <img src="./images/meditation_app_pc.jpg" width="360" alt="photo of meditation app">
-                         </picture>
+                        <picture>
+                            <!-- Desktop screen -->
+                            <source media='(min-width: 1158px)'
+                                srcset='./images/meditation_app_pc.jpg 1x, ./images/meditation_app_pc2x.jpg 2x' />
+                            <!-- Tablet screen -->
+                            <source media='(min-width: 768px)'
+                                srcset='./images/meditation_app_tablet.jpg 1x, ./images/meditation_app_tablet2x.jpg 2x' />
+                            <!-- Mobile screen -->
+                            <source media='(max-width: 767px)'
+                                srcset='./images/meditation_app_mobile.jpg 1x, ./images/meditation_app_mobile2x.jpg 2x' />
+                            <img src='./images/meditation_app_pc.jpg' alt='cashless payment' />
+                        </picture>
                             <p class="portfolio-p">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
                                 Ecommerce App ·
@@ -364,15 +373,18 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-overlay">
-                         <picture>
-                            <source srcset="./images/taxi_service_pc2x.jpg" media="(min-width: 1158px) and (min-resolution: 192dpi)">
-                            <source srcset="./images/taxi_service_pc.jpg" media="(min-width: 1158px)">
-                            <source srcset="./images/taxi_service_tablet2x.jpg" media="(min-width: 768px) and (max-width: 1157px) and (min-resolution: 192dpi)">
-                            <source srcset="./images/taxi_service_tablet.jpg" media="(min-width: 768px) and (max-width: 1157px)">
-                            <source srcset="./images/taxi_service_mobile2x.jpg" media="(max-width: 767px) and (min-resolution: 192dpi)">
-                            <source srcset="./images/taxi_service_mobile.jpg" media="(max-width: 767px)">
-                            <img src="./images/taxi_service_pc.jpg" width="360" alt="photo of taxi service">
-                         </picture>
+                        <picture>
+                            <!-- Desktop screen -->
+                            <source media='(min-width: 1158px)'
+                                srcset='./images/taxi_service_pc.jpg 1x, ./images/taxi_service_pc2x.jpg 2x' />
+                            <!-- Tablet screen -->
+                            <source media='(min-width: 768px)'
+                                srcset='./images/taxi_service_tablet.jpg 1x, ./images/taxi_service_tablet2x.jpg 2x' />
+                            <!-- Mobile screen -->
+                            <source media='(max-width: 767px)'
+                                srcset='./images/taxi_service_mobile.jpg 1x, ./images/taxi_service_mobile2x.jpg 2x' />
+                            <img src='./images/taxi_service_pc.jpg' alt='cashless payment' />
+                        </picture>
                             <p class="portfolio-p">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
                                 Ecommerce App ·
@@ -386,15 +398,18 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-overlay">
-                         <picture>
-                            <source srcset="./images/screen_illustrations_pc2x.jpg" media="(min-width: 1158px) and (min-resolution: 192dpi)">
-                            <source srcset="./images/screen_illustrations_pc.jpg" media="(min-width: 1158px)">
-                            <source srcset="./images/screen_illustrations_tablet2x.jpg" media="(min-width: 768px) and (max-width: 1157px) and (min-resolution: 192dpi)">
-                            <source srcset="./images/screen_illustrations_tablet.jpg" media="(min-width: 768px) and (max-width: 1157px)">
-                            <source srcset="./images/screen_illustrations_mobile2x.jpg" media="(max-width: 767px) and (min-resolution: 192dpi)">
-                            <source srcset="./images/screen_illustrations_mobile.jpg" media="(max-width: 767px)">
-                            <img src="./images/screen_illustrations.jpg" width="360" alt="photo of screen illustrations">
-                         </picture>
+                        <picture>
+                            <!-- Desktop screen -->
+                            <source media='(min-width: 1158px)'
+                                srcset='./images/screen_illustrations_pc.jpg 1x, ./images/screen_illustrations_pc2x.jpg 2x' />
+                            <!-- Tablet screen -->
+                            <source media='(min-width: 768px)'
+                                srcset='./images/screen_illustrations_tablet.jpg 1x, ./images/screen_illustrations_tablet2x.jpg 2x' />
+                            <!-- Mobile screen -->
+                            <source media='(max-width: 767px)'
+                                srcset='./images/screen_illustrations_mobile.jpg 1x, ./images/screen_illustrations_mobile2x.jpg 2x' />
+                            <img src='./images/screen_illustrations_pc.jpg' alt='cashless payment' />
+                        </picture>
                             <p class="portfolio-p">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
                                 Ecommerce App ·
@@ -408,15 +423,18 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-overlay">
-                         <picture>
-                            <source srcset="./images/online_courses_pc2x.jpg" media="(min-width: 1158px) and (min-resolution: 192dpi)">
-                            <source srcset="./images/online_courses_pc.jpg" media="(min-width: 1158px)">
-                            <source srcset="./images/online_courses_tablet2x.jpg" media="(min-width: 768px) and (max-width: 1157px) and (min-resolution: 192dpi)">
-                            <source srcset="./images/online_courses_tablet.jpg" media="(min-width: 768px) and (max-width: 1157px)">
-                            <source srcset="./images/online_courses_mobile2x.jpg" media="(max-width: 767px) and (min-resolution: 192dpi)">
-                            <source srcset="./images/online_courses_mobile.jpg  " media="(max-width: 767px)">
-                            <img src="./images/online_courses.jpg" width="360" alt="photo of online courses">
-                         </picture>
+                        <picture>
+                            <!-- Desktop screen -->
+                            <source media='(min-width: 1158px)'
+                                srcset='./images/online_courses_pc.jpg 1x, ./images/online_courses_pc2x.jpg 2x' />
+                            <!-- Tablet screen -->
+                            <source media='(min-width: 768px)'
+                                srcset='./images/online_courses_tablet.jpg 1x, ./images/online_courses_tablet2x.jpg 2x' />
+                            <!-- Mobile screen -->
+                            <source media='(max-width: 767px)'
+                                srcset='./images/online_courses_mobile.jpg 1x, ./images/online_courses_mobile2x.jpg 2x' />
+                            <img src='./images/online_courses_pc.jpg' alt='cashless payment' />
+                        </picture>
                             <p class="portfolio-p">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
                                 Ecommerce App ·
@@ -509,35 +527,35 @@
         <div class="icon-with-adress">
             <address class="contact-info-mobile">
                 <ul class="contacts-mobile">
-                    <li><a class="contact-link-mobile" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li><a class="contact-link-mobile" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    <li><a class="contact-link-mobile" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 </ul>
             </address>
             <ul class="mobile-list-ul">
                 <li class="item-mobile">
                     <a href="" class="mobile-href-icon">
-                        <svg class="mobile-icon" width="16" height="16">
+                        <svg class="mobile-icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-instagram"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="item-mobile">
                     <a href="" class="mobile-href-icon">
-                        <svg class="mobile-icon" width="16" height="16">
+                        <svg class="mobile-icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-twitter"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="item-mobile">
                     <a href="" class="mobile-href-icon">
-                        <svg class="mobile-icon" width="16" height="16">
+                        <svg class="mobile-icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-facebook"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="item-mobile">
                     <a href="" class="mobile-href-icon">
-                        <svg class="mobile-icon" width="16" height="16">
+                        <svg class="mobile-icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-linkedin"></use>
                         </svg>
                     </a>
