@@ -117,15 +117,12 @@
                 <h2 class="team-heading">Our Team</h2>
                 <ul class="team-list">
                     <li class="team-member">
-                     <picture>
-                        <source srcset="./images/mark_guerrero2x.jpg" media="(min-resolution: 192dpi)">
-                        <source srcset="./images/mark_guerrero.jpg" media="(max-resolution: 191dpi)">
                         <img 
                              src="./images/mark_guerrero.jpg"
                              width="264" 
                              alt="Photo of Mark Guerrero"
-                        />
-                     </picture>
+                             srcset="./images/mark_guerrero.jpg, ./images/mark_guerrero2x.jpg"
+                         />
                         <div class="for-members">
                             <h3 class="team-member-name">Mark Guerrero</h3>
                             <p class="team-member-role">Product Designer</p>
@@ -163,11 +160,12 @@
                     </li>
         
                     <li class="team-member">
-                     <picture>
-                        <source srcset="./images/tom_ford2x.jpg" media="(min-resolution: 192dpi)">
-                        <source srcset="./images/tom_ford.jpg" media="(max-resolution: 191dpi)">
-                        <img src="./images/tom_ford.jpg" width="264" alt="Photo of Tom Ford" />
-                     </picture>
+                        <img 
+                             src="./images/tom_ford.jpg" 
+                             width="264" 
+                             alt="Photo of Tom Ford" 
+                             srcset="./images/tom_ford.jpg, ./images/tom_ford2x.jpg"
+                        />
                         <div class="for-members">
                             <h3 class="team-member-name">Tom Ford</h3>
                             <p class="team-member-role">Frontend Developer</p>
@@ -205,11 +203,12 @@
                     </li>
         
                     <li class="team-member">
-                     <picture>
-                        <source srcset="./images/camila_garcia2x.jpg" media="(min-resolution: 192dpi)">
-                        <source srcset="./images/camila_garcia.jpg" media="(max-resolution: 191dpi)">
-                        <img src="./images/camila_garcia.jpg" width="264" alt="Photo of Camila Garcia" />
-                     </picture>
+                        <img 
+                             src="./images/camila_garcia.jpg" 
+                             width="264" 
+                             alt="Photo of Camila Garcia"
+                             srcset="./images/camila_garcia.jpg, ./images/camila_garcia2x.jpg"
+                         />
                         <div class="for-members">
                             <h3 class="team-member-name">Camila Garcia</h3>
                             <p class="team-member-role">Marketing</p>
@@ -247,11 +246,12 @@
                     </li>
         
                     <li class="team-member">
-                     <picture>
-                        <source srcset="./images/daniel_wilson2x.jpg" media="(min-resolution: 192dpi)">
-                        <source srcset="./images/daniel_wilson.jpg" media="(max-resolution: 191dpi)">
-                        <img src="./images/daniel_wilson.jpg" width="264" alt="Photo of Daniel Wilson" />
-                     </picture>
+                        <img 
+                             src="./images/daniel_wilson.jpg" 
+                             width="264" 
+                             alt="Photo of Daniel Wilson"
+                             srcset="./images/daniel_wilson.jpg, ./images/daniel_wilson2x.jpg"
+                        />
                         <div class="for-members">
                             <h3 class="team-member-name">Daniel Wilson</h3>
                             <p class="team-member-role">UI Designer</p>
@@ -493,6 +493,59 @@
             </div>
         </div>
     </footer>
+
+    <!-- MoBILE -->
+    <div class="menu-mobile">
+        <button type="button" class="mobile-close">
+            <svg width="8" height="8" class="close-icon">
+                <use href="./images/icons.svg#icon-close-1"></use>
+            </svg>
+        </button>
+        <ul class="menu-item-content">
+            <li class="menu-item-mobile"><a class="menu-link-mobile first-menu-item-a" href="./index.html">Studio</a></li>
+            <li class="menu-item-mobile"><a class="menu-link-mobile" href="">Portfolio</a></li>
+            <li class="menu-item-mobile"><a class="menu-link-mobile" href="">Contacts</a></li>
+        </ul>
+        <div class="icon-with-adress">
+            <address class="contact-info-mobile">
+                <ul class="contacts-mobile">
+                    <li><a class="contact-link-mobile" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="contact-link-mobile" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                </ul>
+            </address>
+            <ul class="mobile-list-ul">
+                <li class="item-mobile">
+                    <a href="" class="mobile-href-icon">
+                        <svg class="mobile-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="item-mobile">
+                    <a href="" class="mobile-href-icon">
+                        <svg class="mobile-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="item-mobile">
+                    <a href="" class="mobile-href-icon">
+                        <svg class="mobile-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="item-mobile">
+                    <a href="" class="mobile-href-icon">
+                        <svg class="mobile-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <div class="modal-backdrop">
         <div class="modal">
             <button class="modal-close-btn" type="button">
@@ -547,59 +600,6 @@
                 </div>
                 <button class="review-form-submit-btn" type="submit">Send</button>
             </form>
-        </div>
-
-<!-- MOBILE -->
- 
-        <div class="menu-mobile">
-            <button type="button" class="mobile-close">
-                <svg width="8" height="8" class="close-icon">
-                    <use href="./images/icons.svg#icon-close"></use>
-                </svg>
-            </button>
-            <ul class="menu-mobile">
-                <li class="menu-item-mobile"><a class="menu-link-mobile first-menu-item" href="./index.html">Studio</a></li>
-                <li class="menu-item-mobile"><a class="menu-link-mobile" href="">Portfolio</a></li>
-                <li class="menu-item-mobile"><a class="menu-link-mobile" href="">Contacts</a></li>
-            </ul>
-            <div class="icon-with-adress">
-                <address class="contact-info-mobile">
-                    <ul class="contacts-mobile">
-                        <li><a class="contact-link-mobile" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li><a class="contact-link-mobile" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-                    </ul>
-                </address>
-                <ul class="mobile-list-ul">
-                    <li class="item-mobile">
-                        <a href="" class="mobile-href-icon">
-                            <svg class="mobile-icon" width="24" height="24">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="item-mobile">
-                        <a href="" class="mobile-href-icon">
-                            <svg class="mobile-icon" width="24" height="24">
-                                <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="item-mobile">
-                        <a href="" class="mobile-href-icon">
-                            <svg class="mobile-icon" width="24" height="24">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="item-mobile">
-                        <a href="" class="mobile-href-icon">
-                            <svg class="mobile-icon" width="24" height="24">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </div>
     </div>
 </body>
