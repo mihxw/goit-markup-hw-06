@@ -903,6 +903,17 @@ body {
   text-align: center;
 }
 
+.footer-icon-container {
+  margin-bottom: 72px;
+}
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
 @media (min-width: 768px) {
   .footer-ul {
     margin-bottom: 0;
@@ -956,6 +967,7 @@ body {
           display: flex;
           flex-wrap: wrap;
           align-items: baseline;
+          gap: 72px 24px;
           justify-content: flex-start;
           padding-right: 108px;
           padding-left: 108px;
@@ -1253,13 +1265,6 @@ body {
 }
 
 /* DEFAULT */
-
-.container {
-  max-width: 320px;
-  margin: 0 auto;
-  padding-left: 16px;
-  padding-right: 16px;
-}
 
 @media screen and (min-width: 768px) {
   .container {
